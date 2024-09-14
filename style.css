@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    background: #080808;
+}
+li{
+    list-style-type: none;
+    
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7vw;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+   
+}
+a:hover{
+    border-bottom: 3px solid #ff004f;
+    transition: border-bottom 0.5s ease;
+   
+}
+span{
+    color: #ff004f;
+    font-size: 4vw;
+    font-weight: 600;
+}
+header{
+    background-image: url(image/background.png);
+    background-size: cover;
+    height: 100vh;
+    /* background-position: fixed; */
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* .navbar .container{
+  
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+ .navlink{
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    gap: 3vw;
+ }
+  .icon{
+    display: none;
+    font-size: 2vw;
+    color: #fff;
+    transition: color 0.5s ease;
+ }
+ .navlink:hover i{
+    color: #ff004f;
+ }
+ .logo{
+    color: #ff004f;
+    font-size: 4vw;
+    font-weight: 800;
+ }
+ 
+ .home{
+    color: #fff;
+    margin-top: 15%;
+ }
+ .home h1{
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 5px;
+   
+ }
+ .home h3{
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+
+
+ /* --------------------------skills-----------------------------------------*/
+ section{
+   
+   margin-top: 80px;
+ }
+ 
+.skills {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+}
+
+ 
+ .skill{
+  width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+   background: #262626;
+   cursor: pointer;
+    box-shadow: 0 5px 10px #262626;
+    transition: background 0.5s ease;
+ }
+ .skill:hover{
+    transform: scale(1.08);
+   
+ }
+ .sub-title{
+    font-size: 3.5vw;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+   
+ }
+ .skill i{
+    font-size: 4vw;
+   margin-bottom: 2vw;
+    color: #ff004f;
+ }
+ .skill h3{
+    font-size: 2.7vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .skill p{
+    font-size: 1.5vw;
+    font-weight: 500;
+   
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Media Queries */
+
+
+ @media screen and (max-width: 608px) {
+    .logo {
+        font-size: 9vw;
+        font-weight: 800;
+        margin-top: 3vw;
+    }
+    .home h1, .home h3 {
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    
+    span{
+        font-size: 6vw;
+    }
+   
+    .navlink {
+       display: none;
+       
+    }
+     .icon {
+    
+        display: block;
+        font-size: 6vw;
+
+    }
+    header{
+        background-image: url(image/phone-background.png);
+        background-size: cover;
+        background-position: right;
+    }
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .skill{
+        padding: 10px 10px;
+     }
+     .sub-title{
+        font-size: 7vw;
+        margin-bottom: 30px;
+    }
+     .skill i{
+        font-size: 7vw;
+        margin-bottom: 1vw;
+    }
+     .skill h3{
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+     .skill p{
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+  
+} 
