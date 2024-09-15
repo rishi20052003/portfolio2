@@ -22,14 +22,15 @@
       </nav> -->
       <nav class="container">
         <h1 class="logo">Portfolio</h1>
-        <ul class="navlink">
+        <ul class="navlink" id="nav-link">
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="icon"> <i class="fa-solid fa-bars"></i></div>
+        <div class="Menu-icon" id="Menu-icon">&#9776;</div>
       </nav>
       <div class="home container">
         <h1>Hii, I am <span>Rishi Raj</span></h1>
@@ -74,5 +75,120 @@
                 </div>
         </div>
     </section>
+    <!-- ------------------About------------------------- -->
+     <section>
+        <div class="container" id="about">
+            <h2 class="sub-title">About Me</h2>
+            <div class="about-me">
+               <div class="col1"> <img src="image/user.png" alt="Profile Pic"></div>
+               <div class="col2"> <h2>Frontend Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at velit vel velit pellentesque tincidunt. Donec semper, dolor eu mollis semper, dolor libero consectetur ex, vel consectetur felis velit non enim. Sed eget massa et nunc lobortis pharetra. Sed vel mi et nunc convallis lobortis. Sed vulputate, mauris vel mollis interdum, metus velit volutpat diam, sed consectetur felis velit non enim. Donec semper, dolor eu mollis semper, dolor libero consectetur ex, vel consectetur felis velit non enim. Sed eget massa et nunc lobortis pharetra. Sed vel mi et nunc convallis lobortis. Sed vulputate, mauris</p></div>
+
+     </section>
+     <!-- ------------------Services------------------------- -->
+
+     <section>
+        <div class="container" id="services">
+            <h2 class="sub-title">My Services</h2>
+            <div class="service-card">
+                <div class="service">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                    </div>
+                    <div class="service">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                    </div>
+                    <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>Full Stack Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                 </div>
+                 <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>Full Stack Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                 </div>
+                
+                 <div>
+     </section>
+     <!-- ------------------Project------------------------- -->
+
+     <section>
+        <div class="container" id="projects">
+            <h2 class="sub-title"> My Projects</h2>
+            <div class="project-card">
+                <div class="project">
+                    <img src="image/work-1.png" alt="Project 1">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                </div>
+                <div class="project">
+                    <img src="image/work-2.png" alt="Project 2">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                </div>
+                <div class="project">
+                    <img src="image/work-3.png" alt="Project 2">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit.</p>
+                </div>
+                
+                    </div>
+     </section>
+
+     <!-- -----------contact-------------- -->
+      <section>
+        <div class="container" id="contact">
+            <h2 class="sub-title">Contact Me</h2>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+           <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-github"></i>
+           </div>
+        </div>
+      </section>
+      
+     <!-- ------------------footer------------------------- -->
+      <footer>
+        <p>�� 2024 My Portfolio. All rights reserved.</p>
+      </footer>
+
+
+
+
+   <script>
+   document.getElementById("Menu-icon").onclick = function() {
+    const navLink = document.getElementById('nav-link');
+    navLink.classList.toggle('active');
+   };
+   </script>
 </body>
 </html>
